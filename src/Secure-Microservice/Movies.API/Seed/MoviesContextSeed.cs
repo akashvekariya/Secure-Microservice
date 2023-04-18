@@ -11,7 +11,7 @@ public static class MoviesContextSeed
         {
             var movies = new List<Movie>
             {
-                new Movie
+                new()
                 {
                     Id = 1,
                     Genre = "Drama",
@@ -21,7 +21,7 @@ public static class MoviesContextSeed
                     ReleaseDate = new DateTime(1994, 5, 5),
                     Owner = "alice"
                 },
-                new Movie
+                new()
                 {
                     Id = 2,
                     Genre = "Crime",
@@ -31,7 +31,7 @@ public static class MoviesContextSeed
                     ReleaseDate = new DateTime(1972, 5, 5),
                     Owner = "alice"
                 },
-                new Movie
+                new()
                 {
                     Id = 3,
                     Genre = "Action",
@@ -41,7 +41,7 @@ public static class MoviesContextSeed
                     ReleaseDate = new DateTime(2008, 5, 5),
                     Owner = "bob"
                 },
-                new Movie
+                new()
                 {
                     Id = 4,
                     Genre = "Crime",
@@ -51,7 +51,7 @@ public static class MoviesContextSeed
                     ReleaseDate = new DateTime(1957, 5, 5),
                     Owner = "bob"
                 },
-                new Movie
+                new()
                 {
                     Id = 5,
                     Genre = "Biography",
@@ -61,7 +61,7 @@ public static class MoviesContextSeed
                     ReleaseDate = new DateTime(1993, 5, 5),
                     Owner = "alice"
                 },
-                new Movie
+                new()
                 {
                     Id = 6,
                     Genre = "Drama",
@@ -71,7 +71,7 @@ public static class MoviesContextSeed
                     ReleaseDate = new DateTime(1994, 5, 5),
                     Owner = "alice"
                 },
-                new Movie
+                new()
                 {
                     Id = 7,
                     Genre = "Drama",
@@ -81,7 +81,7 @@ public static class MoviesContextSeed
                     ReleaseDate = new DateTime(1999, 5, 5),
                     Owner = "bob"
                 },
-                new Movie
+                new()
                 {
                     Id = 8,
                     Genre = "Romance",
