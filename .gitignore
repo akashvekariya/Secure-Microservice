@@ -400,3 +400,5 @@ FodyWeavers.xsd
 # MacOS
 .DS_Store
 **/.vs/
+**/.idea/
+src/**/.vscode/
