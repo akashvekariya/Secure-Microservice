@@ -7,6 +7,7 @@ namespace Movies.API.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
+[Authorize("ClientIdPolicy")]
 public class MoviesController : ControllerBase
 {
     private readonly MoviesContext _context;
@@ -70,7 +71,10 @@ public class MoviesController : ControllerBase
         _context.Movies.Add(movie);
         await _context.SaveChangesAsync();
 
-        return CreatedAtAction("GetMovie", new { id = movie.Id }, movie);
+        return CreatedAtAction("GetMovie", new
+        {
+            id = movie.Id
+        }, movie);
     }
 
     // DELETE: api/Movies/5
